@@ -38,6 +38,11 @@
       <artifactId>jaxb-impl</artifactId>
       <version>2.3.5</version>
     </dependency>
+    <dependency>
+      <groupId>org.camunda.bpm.identity</groupId>
+      <artifactId>camunda-identity-ldap</artifactId>
+      <version>7.17.0</version>
+    </dependency>
   </dependencies>
 
   <build>
