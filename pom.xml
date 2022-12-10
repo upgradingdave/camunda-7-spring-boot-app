@@ -5,10 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <camunda.spring-boot.version>7.18.0-ee</camunda.spring-boot.version>
-    <spring-boot.version>2.6.6</spring-boot.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <spring-boot.version>2.7.6</spring-boot.version>
+    <okta.spring-boot.version>2.1.6</okta.spring-boot.version>
+    <camunda.version>7.18.0-ee</camunda.version>
   </properties>
 
   <dependencyManagement>
@@ -20,6 +21,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.camunda.bpm</groupId>
+        <artifactId>camunda-bom</artifactId>
+        <version>${camunda.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -27,7 +35,11 @@
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
-      <version>${camunda.spring-boot.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.okta.spring</groupId>
+      <artifactId>okta-spring-boot-starter</artifactId>
+      <version>${okta.spring-boot.version}</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
