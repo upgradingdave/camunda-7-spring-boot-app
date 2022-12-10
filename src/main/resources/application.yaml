@@ -11,4 +11,10 @@ okta:
     issuer: https://dev-66748045.okta.com/oauth2/default
     client-id: xxx
     client-secret: xxx
+    scopes: openid,profile,email
+    groupsClaim: camunda-groups
+    post-logout-redirect-uri: http://localhost:8080/
 
+sso:
+  enable:
+    singlelogout: false
