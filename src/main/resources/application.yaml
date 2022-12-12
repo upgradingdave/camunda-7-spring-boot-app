@@ -1,12 +1,13 @@
-camunda.bpm:
-  authorization:
-    enabled: true
-  admin-user:
-    id: demo
-    password: demo
-    firstName: Demo
-  filter:
-    create: All tasks
+camunda:
+  bpm:
+    authorization:
+      enabled: true
+    admin-user:
+      id: demo
+      password: demo
+      firstName: Demo
+    filter:
+      create: All tasks
 
 okta:
   oauth2:
