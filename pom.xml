@@ -34,11 +34,16 @@
   <dependencies>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
-      <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
+      <artifactId>camunda-bpm-spring-boot-starter-webapp-ee</artifactId>
     </dependency>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.camunda.bpm</groupId>
+      <artifactId>camunda-external-task-client-spring</artifactId>
+      <version>${camunda.version}</version>
     </dependency>
     <dependency>
       <groupId>com.okta.spring</groupId>

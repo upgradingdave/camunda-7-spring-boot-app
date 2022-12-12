@@ -33,7 +33,8 @@ Add `elon.musk@camunda.com` to `camunda-managers`.
 
 Now, Elon should be able to see User Task 1. And Bill should see User Task 2. 
 
+## External Task Worker Client
 
-
+As part of this project, an external task worker client is started and handles service tasks with `extTask1` type.
 
 
