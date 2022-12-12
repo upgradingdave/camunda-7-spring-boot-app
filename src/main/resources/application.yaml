@@ -1,4 +1,6 @@
 camunda.bpm:
+  authorization:
+    enabled: true
   admin-user:
     id: demo
     password: demo
@@ -13,8 +15,9 @@ okta:
     client-secret: xxx
     scopes: openid,profile,email
     groupsClaim: camunda-groups
-    post-logout-redirect-uri: http://localhost:8080/
+    post-logout-redirect-uri: http://localhost:8080/camunda
 
 sso:
   enable:
     singlelogout: false
+
