@@ -18,3 +18,22 @@ mvn springboot:run
 Then, point your browser to the [Camunda Welcome App](http://localhost:8080/camunda/app/welcome/default/#!/welcome)
 
 This project uses spring security to protect resources. You should be redirected to an Okta sign in screen.
+
+## Users, Groups, and Authorizations
+
+The example process assigns the first task to the `camunda-managers` group. 
+
+Then, it assigns the second User Task directly to `bill.gates@camunda.com`. 
+
+There is more than one way to configure security, but the way I suggest is to create a group called `tasklist-users`. Authorize the `tasklist-users` to have READ access to any filters. And create another authorization to the `tasklist-users` to have access to the `tasklist` App. 
+
+Create 2 users: `elon.musk@camunda.com` and `bill.gates@camunda.com` and add them to the `tasklist-users`. 
+
+Add `elon.musk@camunda.com` to `camunda-managers`. 
+
+Now, Elon should be able to see User Task 1. And Bill should see User Task 2. 
+
+
+
+
+
