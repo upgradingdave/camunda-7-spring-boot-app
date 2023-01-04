@@ -25,7 +25,11 @@ The example process assigns the first task to the `camunda-managers` group.
 
 Then, it assigns the second User Task directly to `bill.gates@camunda.com`. 
 
-There is more than one way to configure security, but the way I suggest is to create a group called `tasklist-users`. Authorize the `tasklist-users` to have READ access to any filters. And create another authorization to the `tasklist-users` to have access to the `tasklist` App. 
+There is more than one way to configure security, but here is my suggestion: 
+
+1. Create a Okta group named `tasklist-users`. 
+2. In Camunda Admin, create an Authorization to allow `tasklist-users` to have READ access to any filters. 
+3. In Camunda Admin, create an Authorization to allow `tasklist-users` to have access to the `tasklist` App. 
 
 Create 2 users: `elon.musk@camunda.com` and `bill.gates@camunda.com` and add them to the `tasklist-users`. 
 
